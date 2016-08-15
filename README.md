@@ -33,3 +33,5 @@ Design notes:
   in methods at same level of abstraction where in certain cases it could have been relaxed (i.e. a method behaviour was simple enough to call a repo
   directly but rather follow similar impl so that there is a general consistency, although even for me it is a little jarring at times and I'd relax this to
   fit in with others coding styles).
+ * I would probably redo the UI/console code and drive it top-down earlier on in the process until it hits the action classes, then potentially drive it
+ bottom up from there.
