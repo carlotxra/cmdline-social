@@ -13,12 +13,12 @@ import java.util.regex.Pattern;
 public class CreateFollowerInputHandler extends BaseInputHandler {
     private static final String USER_HANDLE_REGEX = "^(\\w+)";
 
-    private static final String CREATE_POST_SEPARATOR_REGEX = " follows ";
+    private static final String FOLLOWS_REGEX = " follows ";
 
     private static final String ANOTHER_USER_REGEX = "(\\w+)";
 
     private static Pattern CREATE_FOLLOWER_REGEX = Pattern.compile(
-            USER_HANDLE_REGEX + CREATE_POST_SEPARATOR_REGEX + ANOTHER_USER_REGEX);
+            USER_HANDLE_REGEX + FOLLOWS_REGEX + ANOTHER_USER_REGEX);
 
     private AddNewFollower addNewFollower;
 
